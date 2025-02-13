@@ -48,7 +48,7 @@ jobs:
           ldd demo/addons/godot-git-plugin/linux/*.so
       - uses: actions/upload-artifact@v4
         with:
-          name: libgit_plugin.linux.x86_64.editor.so-${{ github.sha }}
+          name: libgit_plugin.linux.aarch64.editor.so-${{ github.sha }}
           if-no-files-found: error
           path: |
             demo/
