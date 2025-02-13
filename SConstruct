@@ -24,7 +24,7 @@ opts.Add(PathVariable("macos_openssl_static_crypto", "Path to OpenSSL libcrypto.
          os.path.join(os.path.abspath(os.getcwd()), "thirdparty/openssl/libcrypto.a"), PathVariable.PathAccept))
 opts.Add(PathVariable("linux_openssl_static_ssl", "Path to OpenSSL libssl.a library - only used in Linux builds.",
          "/usr/lib/x86_64-linux-gnu/libssl.a", PathVariable.PathAccept))
-if aarch:
+if aarch64:
          opts.Add(PathVariable("linux_openssl_static_crypto", "Path to OpenSSL libcrypto.a library - only used in Linux builds.",
                   "/usr/lib/aarch64-linux-gnu/libcrypto.a", PathVariable.PathAccept))
 else:
